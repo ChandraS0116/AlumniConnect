@@ -8,6 +8,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-5.2-000000?style=for-the-badge&logo=express&logoColor=white)
 ![SQLite WAL](https://img.shields.io/badge/Database-SQLite%20(Native%20WAL)-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+[![CI](https://github.com/ChandraS0116/AlumniConnect/actions/workflows/ci.yml/badge.svg)](https://github.com/ChandraS0116/AlumniConnect/actions)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **Centralized Andhra University Alumni Networking, AI Mentorship Matching & Video Knowledge Vault**

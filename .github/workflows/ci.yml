@@ -1,0 +1,31 @@
+name: "Alma.Net CI - Automated Tests & Build Verification"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  verify:
+    name: "Alumni Directory, API & Client Verification"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Run Automated Test Suite (12 Tests)
+        run: npm test
+
+      - name: Verify Production Client Build
+        run: npm run build
